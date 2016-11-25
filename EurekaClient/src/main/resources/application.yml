@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: eureka-client 
+eureka:
+  instance:
+     leaseRenewalIntervalInSeconds: 5   # DO NOT DO THIS IN PRODUCTION
+
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka-server/eureka/
+#spring.jmx.enabled: false
+spring.jmx.default-domain: com.eureka.client

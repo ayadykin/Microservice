@@ -1,0 +1,11 @@
+# Spring properties
+spring:
+  application:
+    name: web-service  # Identify this application
+eureka:
+  instance:
+     leaseRenewalIntervalInSeconds: 5   # DO NOT DO THIS IN PRODUCTION
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka-server/eureka/
+
